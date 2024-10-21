@@ -1,0 +1,38 @@
+//Development
+###
+GET http://localhost:3000/
+###
+
+GET http://localhost:3000/contacts/
+
+###
+GET http://localhost:3000/contacts/66fbf7b510d4d2c528b1e32b
+
+
+###
+POST http://localhost:3000/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Milton",
+    "lastName": "Chino",
+    "email": "miltonchino@byui.com",
+    "favoriteColor": "blue",
+    "birthday": "05/08/97"
+}
+
+###
+PUT http://localhost:3000/contacts/67131873a0510839ba0387dd HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Helaman",
+    "lastName":"Chino",
+    "email":"test@gmail.com",
+    "favoriteColor":"Red",
+    "birthday":"12/12/24"
+}
+### DELETE contact
+DELETE http://localhost:3000/contacts/67131873a0510839ba0387dd HTTP/1.1
+
+// Production
