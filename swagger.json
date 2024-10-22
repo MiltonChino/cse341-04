@@ -5,18 +5,14 @@
     "description": "Here you will save the contacts you need",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-04.onrender.com/",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["https"],
   "paths": {
     "/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -74,9 +70,7 @@
     "/contacts/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -124,9 +118,7 @@
     "/contacts/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -207,9 +199,7 @@
     "/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",

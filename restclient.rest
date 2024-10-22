@@ -36,3 +36,39 @@ content-type: application/json
 DELETE http://localhost:3000/contacts/67131873a0510839ba0387dd HTTP/1.1
 
 // Production
+
+###
+https://cse341-04.onrender.com/
+
+###
+https://cse341-04.onrender.com/contacts
+
+###
+https://cse341-04.onrender.com/contacts/6717120629810ddfa37595f2
+
+###
+POST https://cse341-04.onrender.com/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Milton",
+    "lastName": "Chino",
+    "email": "miltonchino@byui.com",
+    "favoriteColor": "blue",
+    "birthday": "05/08/97"
+}
+
+###
+PUT https://cse341-04.onrender.com/contacts/6717120629810ddfa37595f2 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Helaman",
+    "lastName":"Chino",
+    "email":"test@gmail.com",
+    "favoriteColor":"Red",
+    "birthday":"12/12/24"
+}
+### DELETE contact
+DELETE https://cse341-04.onrender.com/contacts/6717120629810ddfa37595f2 HTTP/1.1
+
